@@ -1,0 +1,76 @@
+# ============================================
+# 🐱 MeowManhunt Configuration
+# Author: Việt Hoàng
+# Website: viethoangmc.page.gd
+# ============================================
+
+# Language: en (English) / vi (Vietnamese)
+language: en
+
+# Prefix displayed before all plugin messages
+prefix: "&5&l[&d&l🐱 MeowManhunt&5&l]&r "
+
+# ---- Game Settings ----
+game:
+  # Number of lives hunters start with (1-10)
+  hunter-lives: 3
+
+  # Countdown before game starts (seconds)
+  countdown-time: 10
+
+  # How often compass updates in ticks (20 ticks = 1 second)
+  compass-update-interval: 20
+
+  # Make speedrunner glow for hunters
+  glow-effect: true
+
+  # Allow hunters to respawn (uses a life)
+  allow-hunter-respawn: true
+
+  # Auto-give compass to hunters on start
+  auto-give-compass: true
+
+  # Speedrunner head start (seconds before hunters can move)
+  head-start: 30
+
+  # Announce game timer every X seconds (0 = disabled)
+  timer-announce-interval: 300
+
+  # Auto-reset game after end (seconds, 0 = disabled)
+  auto-reset-delay: 15
+
+# ---- BossBar Settings ----
+bossbar:
+  enabled: true
+  # Colors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+  running-color: RED
+  countdown-color: YELLOW
+  # Styles: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+  style: SOLID
+
+# ---- Scoreboard Settings ----
+scoreboard:
+  enabled: true
+  # Update interval in ticks
+  update-interval: 10
+
+# ---- Win Fireworks ----
+fireworks:
+  enabled: true
+  count: 10
+
+# ---- Sounds ----
+sounds:
+  enabled: true
+  game-start: ENTITY_ENDER_DRAGON_GROWL
+  game-end: UI_TOAST_CHALLENGE_COMPLETE
+  countdown-tick: BLOCK_NOTE_BLOCK_PLING
+  hunter-death: ENTITY_WITHER_HURT
+  speedrunner-death: ENTITY_LIGHTNING_BOLT_THUNDER
+  join: ENTITY_PLAYER_LEVELUP
+  leave: ENTITY_ITEM_BREAK
+
+# ---- Permission nodes ----
+# (Also set in plugin.yml, listed here for reference)
+# meowmanhunt.use - basic usage
+# meowmanhunt.admin - admin commands
