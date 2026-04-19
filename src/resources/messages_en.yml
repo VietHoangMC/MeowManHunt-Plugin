@@ -1,0 +1,147 @@
+# ============================================
+# 🐱 MeowManhunt - English Messages
+# Use & for color codes. Placeholders:
+# {player} {target} {lives} {time} {runners} {hunters} {count}
+# ============================================
+
+# --- General ---
+no-permission: "&c❌ You don't have permission to do that!"
+player-only: "&c❌ This command can only be used by players!"
+player-not-found: "&c❌ Player &e{player} &cnot found!"
+invalid-number: "&c❌ Please enter a valid number!"
+reloaded: "&a✅ MeowManhunt configuration reloaded!"
+language-set: "&a🌐 Language set to &bEnglish&a!"
+
+# --- Game State ---
+game-already-running: "&c❌ A game is already running!"
+game-not-running: "&c❌ No game is currently running!"
+game-waiting: "&e⏳ Game is waiting for players..."
+not-in-game: "&c❌ You are not in this game!"
+
+# --- Join / Leave ---
+joined-speedrunner: "&a🏃 You joined as &2Speedrunner&a!"
+joined-hunter: "&c⚔️ You joined as &4Hunter&a!"
+joined-spectator: "&7👁️ You joined as &8Spectator&7!"
+left-game: "&e🚪 You left the game!"
+already-speedrunner: "&c❌ You are already a Speedrunner!"
+already-hunter: "&c❌ You are already a Hunter!"
+already-spectator: "&c❌ You are already a Spectator!"
+player-joined-speedrunner: "&a🏃 &e{player} &ajoined as &2Speedrunner&a!"
+player-joined-hunter: "&c⚔️ &e{player} &cjoined as &4Hunter&c!"
+player-joined-spectator: "&7👁️ &e{player} &7joined as Spectator!"
+player-left: "&e🚪 &e{player} &eleft the game!"
+
+# --- Team Management ---
+set-speedrunner: "&a✅ &e{player} &ahas been set as Speedrunner!"
+set-hunter: "&a✅ &e{player} &ahas been set as Hunter!"
+removed-from-team: "&a✅ &e{player} &ahas been removed from their team!"
+already-in-team: "&c❌ {player} is already in a team!"
+
+# --- Countdown ---
+countdown-start: "&e⚡ Game starting in &6{count} &eseconds! Get ready!"
+countdown-3: "&c3..."
+countdown-2: "&c2..."
+countdown-1: "&c1..."
+countdown-go: "&a&l🚀 GO! The hunt begins!"
+head-start-warning: "&e⚡ Hunters will be released in &6{time} &eseconds!"
+head-start-end: "&c🔓 Hunters are now free to move!"
+need-players: "&c❌ Need at least &61 Speedrunner &cand &61 Hunter &cto start!"
+
+# --- Game Start ---
+game-start-broadcast: |
+  &5&m----------&r &d&l🐱 MEOW MANHUNT &5&m----------
+  &e🏃 Speedrunners: &a{runners}
+  &c⚔️ Hunters: &4{hunters}
+  &c❤️ Hunter Lives: &6{lives}
+  &5&m----------------------------
+game-started: "&a✅ Game started by &e{player}&a!"
+compass-tip: "&b🧭 Right-click your compass to track a Speedrunner!"
+
+# --- Game Running ---
+compass-update: "&b🧭 Tracking: &e{target} &b| Distance: &6{distance}m"
+compass-no-target: "&c❌ No Speedrunner found to track!"
+lives-remaining: "&c❤️ Lives remaining: &6{lives}"
+hunter-died: "&c💀 &e{player} &cdied! &6{lives} &clives remaining."
+hunter-eliminated: "&c💀 &e{player} &chas been eliminated! (No lives left)"
+speedrunner-died: "&c💀 &e{player} &c(Speedrunner) has died!"
+
+# --- Win / Lose ---
+hunters-win: |
+  &4&m==============================
+  &c&l⚔️ HUNTERS WIN! ⚔️
+  &4&m==============================
+  &eThe Speedrunner has been defeated!
+  &4&m==============================
+speedrunners-win: |
+  &2&m==============================
+  &a&l🏆 SPEEDRUNNERS WIN! 🏆
+  &2&m==============================
+  &eThe Ender Dragon has been slain!
+  &2&m==============================
+game-draw: "&e🤝 The game ended in a draw!"
+game-stopped: "&c🛑 Game stopped by &e{player}&c!"
+game-stopped-no-one: "&c🛑 Game has been stopped!"
+auto-reset: "&7⏳ Game resets in &e{time} &7seconds..."
+
+# --- Status ---
+status-header: "&5&m--------&r &d🐱 Game Status &5&m--------"
+status-state: "&eState: &f{state}"
+status-runners: "&a🏃 Speedrunners ({count}): &f{list}"
+status-hunters: "&c⚔️ Hunters ({count}): &f{list}"
+status-spectators: "&7👁️ Spectators ({count}): &f{list}"
+status-lives: "&c❤️ Hunter Lives: &6{lives}"
+status-time: "&b⏱️ Game Time: &f{time}"
+status-footer: "&5&m-------------------------------"
+state-waiting: "⏳ Waiting"
+state-countdown: "⚡ Countdown"
+state-running: "🎮 Running"
+state-ended: "🏁 Ended"
+
+# --- Lives Setting ---
+lives-set: "&a✅ Hunter lives set to &6{lives}&a!"
+lives-min: "&c❌ Lives must be at least 1!"
+lives-max: "&c❌ Lives cannot exceed 10!"
+
+# --- Compass ---
+give-compass: "&b🧭 You have been given a tracking compass!"
+
+# --- Help ---
+help-header: "&5&m--------&r &d🐱 MeowManhunt Help &5&m--------"
+help-menu: "&b/manhunt menu &7- Open the GUI menu"
+help-start: "&b/manhunt start &7- Start the game"
+help-stop: "&b/manhunt stop &7- Stop the game"
+help-join: "&b/manhunt join <runner|hunter|spectator> &7- Join a team"
+help-leave: "&b/manhunt leave &7- Leave the game"
+help-setrunner: "&b/manhunt setrunner <player> &7- Set player as runner"
+help-sethunter: "&b/manhunt sethunter <player> &7- Set player as hunter"
+help-removerunner: "&b/manhunt removerunner <player> &7- Remove runner"
+help-removehunter: "&b/manhunt removehunter <player> &7- Remove hunter"
+help-lives: "&b/manhunt lives <1-10> &7- Set hunter lives"
+help-countdown: "&b/manhunt countdown <seconds> &7- Set countdown time"
+help-status: "&b/manhunt status &7- Show game status"
+help-reload: "&b/manhunt reload &7- Reload config"
+help-lang: "&b/manhunt lang <en|vi> &7- Change language"
+help-give: "&b/manhunt give compass &7- Give compass to hunters"
+help-glow: "&b/manhunt glow <on|off> &7- Toggle glow effect"
+help-footer: "&5&m-------------------------------"
+
+# --- Scoreboard ---
+sb-title: "&d&l🐱 MEOW MANHUNT"
+sb-state: "&eState: &f{state}"
+sb-runners: "&a🏃 Runners: &f{count}"
+sb-hunters: "&c⚔️ Hunters: &f{count}"
+sb-your-lives: "&c❤️ Your Lives: &6{lives}"
+sb-time: "&b⏱️ Time: &f{time}"
+sb-empty: " "
+
+# --- BossBar ---
+bossbar-countdown: "🐱 Game Starting in {time}s..."
+bossbar-running: "🐱 MeowManhunt | ⏱ {time} | 🏃 {runners} | ⚔️ {hunters}"
+bossbar-headstart: "🐱 Head Start: {time}s remaining..."
+bossbar-ended: "🐱 Game Ended!"
+
+# --- Menu Titles ---
+menu-main-title: "🐱 MeowManhunt - Main Menu"
+menu-team-title: "🐱 MeowManhunt - Teams"
+menu-settings-title: "🐱 MeowManhunt - Settings"
+menu-lang-title: "🐱 MeowManhunt - Language"
