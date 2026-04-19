@@ -1,0 +1,28 @@
+name: MeowManhunt
+version: '${project.version}'
+main: me.viethoang.meowmanhunt.MeowManhunt
+api-version: '1.21'
+authors: [Việt Hoàng]
+website: viethoangmc.page.gd
+description: A cute and full-featured Manhunt plugin for Minecraft 1.21+
+
+commands:
+  manhunt:
+    description: Main MeowManhunt command
+    usage: /manhunt <subcommand>
+    aliases: [mh, mn, meowmanhunt]
+    permission: meowmanhunt.use
+
+permissions:
+  meowmanhunt.use:
+    description: Use basic MeowManhunt commands
+    default: true
+  meowmanhunt.admin:
+    description: Admin MeowManhunt commands (start, stop, reload, settings)
+    default: op
+  meowmanhunt.*:
+    description: All MeowManhunt permissions
+    default: op
+    children:
+      meowmanhunt.use: true
+      meowmanhunt.admin: true
