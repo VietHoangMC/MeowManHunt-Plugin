@@ -1,4 +1,4 @@
-# 🐱 MeowManhunt Plugin
+# MeowManhunt Plugin
 
 **Author:** Việt Hoàng  
 **Website:** https://viethoangmc.page.gd  
@@ -124,7 +124,7 @@ plugins/MeowManhunt/
 
 ---
 
-## 🐱 Credits
+## Credits
 
 Made with ❤️ by **Việt Hoàng**  
 Website: https://viethoangmc.page.gd
