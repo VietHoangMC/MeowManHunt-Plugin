@@ -1,0 +1,147 @@
+# ============================================
+# 🐱 MeowManhunt - Tin nhắn Tiếng Việt
+# Dùng & cho mã màu. Biến:
+# {player} {target} {lives} {time} {runners} {hunters} {count}
+# ============================================
+
+# --- Chung ---
+no-permission: "&c❌ Bạn không có quyền thực hiện hành động này!"
+player-only: "&c❌ Lệnh này chỉ dành cho người chơi!"
+player-not-found: "&c❌ Không tìm thấy người chơi &e{player}&c!"
+invalid-number: "&c❌ Vui lòng nhập một số hợp lệ!"
+reloaded: "&a✅ Đã tải lại cấu hình MeowManhunt!"
+language-set: "&a🌐 Ngôn ngữ đã được đặt thành &bTiếng Việt&a!"
+
+# --- Trạng thái game ---
+game-already-running: "&c❌ Đã có một trò chơi đang diễn ra!"
+game-not-running: "&c❌ Hiện không có trò chơi nào đang chạy!"
+game-waiting: "&e⏳ Đang chờ người chơi tham gia..."
+not-in-game: "&c❌ Bạn không tham gia trò chơi này!"
+
+# --- Tham gia / Rời ---
+joined-speedrunner: "&a🏃 Bạn đã tham gia với vai trò &2Speedrunner&a!"
+joined-hunter: "&c⚔️ Bạn đã tham gia với vai trò &4Hunter&c!"
+joined-spectator: "&7👁️ Bạn đã tham gia với vai trò &8Khán giả&7!"
+left-game: "&e🚪 Bạn đã rời khỏi trò chơi!"
+already-speedrunner: "&c❌ Bạn đã là Speedrunner rồi!"
+already-hunter: "&c❌ Bạn đã là Hunter rồi!"
+already-spectator: "&c❌ Bạn đã là Khán giả rồi!"
+player-joined-speedrunner: "&a🏃 &e{player} &ađã tham gia với vai trò &2Speedrunner&a!"
+player-joined-hunter: "&c⚔️ &e{player} &cđã tham gia với vai trò &4Hunter&c!"
+player-joined-spectator: "&7👁️ &e{player} &7đã tham gia với vai trò Khán giả!"
+player-left: "&e🚪 &e{player} &eđã rời khỏi trò chơi!"
+
+# --- Quản lý đội ---
+set-speedrunner: "&a✅ &e{player} &ađã được đặt làm Speedrunner!"
+set-hunter: "&a✅ &e{player} &ađã được đặt làm Hunter!"
+removed-from-team: "&a✅ &e{player} &ađã được xóa khỏi đội!"
+already-in-team: "&c❌ {player} đã ở trong đội rồi!"
+
+# --- Đếm ngược ---
+countdown-start: "&e⚡ Trò chơi bắt đầu sau &6{count} &egiây! Hãy sẵn sàng!"
+countdown-3: "&c3..."
+countdown-2: "&c2..."
+countdown-1: "&c1..."
+countdown-go: "&a&l🚀 XUẤT PHÁT! Cuộc săn bắt đầu!"
+head-start-warning: "&e⚡ Hunter sẽ được thả sau &6{time} &egiây!"
+head-start-end: "&c🔓 Hunter đã được tự do di chuyển!"
+need-players: "&c❌ Cần ít nhất &61 Speedrunner &cvà &61 Hunter &cđể bắt đầu!"
+
+# --- Bắt đầu game ---
+game-start-broadcast: |
+  &5&m----------&r &d&l🐱 MEOW MANHUNT &5&m----------
+  &e🏃 Speedrunner: &a{runners}
+  &c⚔️ Hunter: &4{hunters}
+  &c❤️ Số mạng Hunter: &6{lives}
+  &5&m----------------------------
+game-started: "&a✅ Trò chơi được bắt đầu bởi &e{player}&a!"
+compass-tip: "&b🧭 Nhấp chuột phải vào la bàn để theo dõi Speedrunner!"
+
+# --- Game đang chạy ---
+compass-update: "&b🧭 Đang theo dõi: &e{target} &b| Khoảng cách: &6{distance}m"
+compass-no-target: "&c❌ Không tìm thấy Speedrunner để theo dõi!"
+lives-remaining: "&c❤️ Số mạng còn lại: &6{lives}"
+hunter-died: "&c💀 &e{player} &cđã chết! Còn &6{lives} &cmạng."
+hunter-eliminated: "&c💀 &e{player} &cđã bị loại! (Hết mạng)"
+speedrunner-died: "&c💀 &e{player} &c(Speedrunner) đã chết!"
+
+# --- Thắng / Thua ---
+hunters-win: |
+  &4&m==============================
+  &c&l⚔️ HUNTER THẮNG! ⚔️
+  &4&m==============================
+  &eSpeedrunner đã bị tiêu diệt!
+  &4&m==============================
+speedrunners-win: |
+  &2&m==============================
+  &a&l🏆 SPEEDRUNNER THẮNG! 🏆
+  &2&m==============================
+  &eRồng Ender đã bị giết!
+  &2&m==============================
+game-draw: "&e🤝 Trò chơi kết thúc hòa!"
+game-stopped: "&c🛑 Trò chơi bị dừng bởi &e{player}&c!"
+game-stopped-no-one: "&c🛑 Trò chơi đã bị dừng!"
+auto-reset: "&7⏳ Trò chơi sẽ reset sau &e{time} &7giây..."
+
+# --- Trạng thái ---
+status-header: "&5&m--------&r &d🐱 Trạng thái Game &5&m--------"
+status-state: "&eTrạng thái: &f{state}"
+status-runners: "&a🏃 Speedrunner ({count}): &f{list}"
+status-hunters: "&c⚔️ Hunter ({count}): &f{list}"
+status-spectators: "&7👁️ Khán giả ({count}): &f{list}"
+status-lives: "&c❤️ Số mạng Hunter: &6{lives}"
+status-time: "&b⏱️ Thời gian: &f{time}"
+status-footer: "&5&m-------------------------------"
+state-waiting: "⏳ Chờ"
+state-countdown: "⚡ Đếm ngược"
+state-running: "🎮 Đang chạy"
+state-ended: "🏁 Kết thúc"
+
+# --- Cài đặt mạng ---
+lives-set: "&a✅ Số mạng Hunter đã đặt thành &6{lives}&a!"
+lives-min: "&c❌ Số mạng phải ít nhất là 1!"
+lives-max: "&c❌ Số mạng không thể vượt quá 10!"
+
+# --- La bàn ---
+give-compass: "&b🧭 Bạn đã nhận được la bàn theo dõi!"
+
+# --- Trợ giúp ---
+help-header: "&5&m--------&r &d🐱 Hướng dẫn MeowManhunt &5&m--------"
+help-menu: "&b/manhunt menu &7- Mở menu giao diện"
+help-start: "&b/manhunt start &7- Bắt đầu trò chơi"
+help-stop: "&b/manhunt stop &7- Dừng trò chơi"
+help-join: "&b/manhunt join <runner|hunter|spectator> &7- Tham gia đội"
+help-leave: "&b/manhunt leave &7- Rời trò chơi"
+help-setrunner: "&b/manhunt setrunner <player> &7- Đặt người chơi làm runner"
+help-sethunter: "&b/manhunt sethunter <player> &7- Đặt người chơi làm hunter"
+help-removerunner: "&b/manhunt removerunner <player> &7- Xóa runner"
+help-removehunter: "&b/manhunt removehunter <player> &7- Xóa hunter"
+help-lives: "&b/manhunt lives <1-10> &7- Đặt số mạng hunter"
+help-countdown: "&b/manhunt countdown <giây> &7- Đặt thời gian đếm ngược"
+help-status: "&b/manhunt status &7- Xem trạng thái game"
+help-reload: "&b/manhunt reload &7- Tải lại cấu hình"
+help-lang: "&b/manhunt lang <en|vi> &7- Thay đổi ngôn ngữ"
+help-give: "&b/manhunt give compass &7- Trao la bàn cho hunter"
+help-glow: "&b/manhunt glow <on|off> &7- Bật/tắt hiệu ứng phát sáng"
+help-footer: "&5&m-------------------------------"
+
+# --- Bảng điểm ---
+sb-title: "&d&l🐱 MEOW MANHUNT"
+sb-state: "&eTT: &f{state}"
+sb-runners: "&a🏃 Runner: &f{count}"
+sb-hunters: "&c⚔️ Hunter: &f{count}"
+sb-your-lives: "&c❤️ Mạng của bạn: &6{lives}"
+sb-time: "&b⏱️ TG: &f{time}"
+sb-empty: " "
+
+# --- BossBar ---
+bossbar-countdown: "🐱 Bắt đầu sau {time}s..."
+bossbar-running: "🐱 MeowManhunt | ⏱ {time} | 🏃 {runners} | ⚔️ {hunters}"
+bossbar-headstart: "🐱 Thời gian headstart: còn {time}s..."
+bossbar-ended: "🐱 Trò chơi kết thúc!"
+
+# --- Tiêu đề Menu ---
+menu-main-title: "🐱 MeowManhunt - Menu Chính"
+menu-team-title: "🐱 MeowManhunt - Đội"
+menu-settings-title: "🐱 MeowManhunt - Cài đặt"
+menu-lang-title: "🐱 MeowManhunt - Ngôn ngữ"
